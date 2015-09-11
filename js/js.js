@@ -7,7 +7,7 @@ $(window).scroll(function () {
             $('.trans-2').removeClass('hidden-2'):
         $('.trans-2').addClass('hidden-2');
 
-        $(this).scrollTop() < 900 ?
+        $(this).scrollTop() < 1000 ?
               $('.trans-5').removeClass('desatura'):
           $('.trans-5').addClass('desatura');
 
@@ -17,7 +17,7 @@ $(window).scroll(function () {
 });
 
 $(function(){
-  $(".slides").slidesjs({ 
+  $(".slides").slidesjs({
     play: {
       active: true,
         // [boolean] Generate the play and stop buttons.
