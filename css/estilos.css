@@ -79,7 +79,7 @@ section {
   justify-content: center;
   width: 100%;
 }
-section maximo-h {
+.maximo-h {
   max-height: 596px;
 }
 section.color2 article.art-txt {
