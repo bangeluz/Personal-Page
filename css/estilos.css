@@ -79,6 +79,12 @@ section {
   justify-content: center;
   width: 100%;
 }
+.maximo-h {
+  max-height: 596px;
+}
+section.color2 article.art-txt {
+  margin-right: -10em;
+}
 article figure {
   width: 30em;
 }
@@ -92,7 +98,7 @@ article a,
 .ico-txt a {
   text-decoration: none;
   border: 2px solid #c1c1c1;
-  padding: 2px 16%;
+  padding: 2px 10%;
   text-transform: uppercase;
   color: #c1c1c1;
   line-height: 3em;
