@@ -6,6 +6,10 @@ color2 = #274E77
   padding: 0
   box-sizing: border-box
 
+/*img
+  max-width: 100%
+  height: auto*/
+
 body
   background-color: #111
   font-family: 'Khand', serif
@@ -62,17 +66,15 @@ nav
   flex-wrap: wrap
   text-transform: uppercase
   margin-bottom: 1.3em
-
-nav a
-  text-decoration: none
-  padding: 5px 15px
-  color: color1
-  transition: 0.2s
-  border-bottom: 1px solid transparent
-
-nav a:hover
-  color: color2
-  border-bottom: 1px solid #274E77
+    a
+      text-decoration: none
+      padding: 5px 15px
+      color: color1
+      transition: .2s
+      border-bottom: 1px solid transparent
+        &:hover
+          color: color2
+          border-bottom: 1px solid #274E77
 
 section
   display: flex
@@ -83,7 +85,7 @@ section
   width: 100%
 
 .maximo-h
-    max-height: 596px
+    max-height: 650px
 
 section.color2 article.art-txt
     margin-right: -10em
@@ -97,18 +99,18 @@ article figure img
 article p
   font-family: 'Open Sans Condensed'
 
-article a, .ico-txt a
-  text-decoration: none
-  border: 2px solid #C1C1C1
-  padding: 2px 10%
-  text-transform: uppercase
-  color: #C1C1C1
-  line-height: 3em
-  transition: 0.3s
-
-article a:hover, .ico-txt a:hover
-  color: #274E77
-  border-color: #274E77
+article, .ico-txt
+  >a
+    text-decoration: none
+    border: 2px solid #C1C1C1
+    padding: 2px 10%
+    text-transform: uppercase
+    color: #C1C1C1
+    line-height: 3em
+    transition: .3s
+      &:hover
+        color: #274E77
+        border-color: #274E77
 
 .art-txt
   width: 37em
@@ -138,19 +140,21 @@ article a:hover, .ico-txt a:hover
   display: inline-block
   text-align: center
 
-.ico-txt:hover span
-  color: #89602D
-  transform: scale(0.9)
+.ico-txt
+  &:hover
+    span
+      color: #89602D
+      transform: scale(.9)
 
-.ico-txt span
-  font-size: 12em
-  transform: scale(1)
-  transition: all 0.3s ease
-
-.ico-txt p
-  font-family: 'Open Sans Condensed'
-  font-size: 0.9rem
-  margin-top: 1em
+.ico-txt
+  span
+    font-size: 12em
+    transform: scale(1)
+    transition: .3s
+  p
+    font-family: 'Open Sans Condensed'
+    font-size: .9rem
+    margin-top: 1em
 
 footer
   background-color: black
@@ -165,29 +169,26 @@ footer
 
 .acerca-de
   padding: 0 3em 0 1em
-  font-size: 0.9rem
+  font-size: .9rem
   width: 50em
 
 .sociales
-  font-size: 0.9em
+  font-size: .9em
   text-align: center
   width: 20em
+    span
+      font-size: 3em
+      padding: 0 .4em
+      line-height: 1.2em
+      transition: .3s
+        &:hover
+          color: #274E77
+    a
+      text-decoration: none
+      color: #c1c1c1
 
-.sociales span
-  font-size: 3em
-  padding: 0 0.4em
-  line-height: 1.2em
-  transition: 0.3s
-
-.sociales span:hover
-  color: #274E77
-
-.sociales a
-  text-decoration: none
-  color: #c1c1c1
-
-.sociales p
-  font-size: 0.8em
+    p
+      font-size: .8em
 
 .trans-1, .trans-3
   opacity: 0
@@ -239,27 +240,23 @@ footer
 
 .slides
   width: 100%
-
-.slides img
-  width: 100%
+    img
+      width: 100%
 
 .slidesjs-pagination
   background: #111
   list-style: none
   overflow: hidden
-
-.slidesjs-pagination li
-  float: left
-
-.slidesjs-pagination li a
-  display: inline-block
-  padding: 5.5px 20px
-  color: #c1c1c1
-  text-decoration: none
-  transition: 0.1s
-
-.slidesjs-pagination li a:hover
-  background: #274E77
+    li
+      float: left
+        a
+          display: inline-block
+          padding: 5.5px 20px
+          color: #c1c1c1
+          text-decoration: none
+          transition: .1s
+            &hover
+              background: #274E77
 
 .slides .active
   background: black
@@ -271,9 +268,8 @@ footer
   display: inline-block
   padding: 10px 20px
   float: left
-
-.slidesjs-navigation:hover
-  background: #274E77
+    &:hover
+      background: #274E77
 
 .slides
   background: black
