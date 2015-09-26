@@ -85,6 +85,132 @@
 		{
 			"icon": {
 				"paths": [
+					"M192 128l640 384-640 384z"
+				],
+				"attrs": [],
+				"tags": [
+					"play",
+					"player"
+				],
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"id": 1001,
+				"order": 8,
+				"prevSize": 32,
+				"ligatures": "play3, player8",
+				"name": "play3",
+				"code": 58886
+			},
+			"setIdx": 0,
+			"setId": 0,
+			"iconIdx": 284
+		},
+		{
+			"icon": {
+				"paths": [
+					"M128 128h320v768h-320zM576 128h320v768h-320z"
+				],
+				"attrs": [],
+				"tags": [
+					"pause",
+					"player"
+				],
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"id": 1002,
+				"order": 9,
+				"prevSize": 32,
+				"ligatures": "pause2, player9",
+				"name": "pause2",
+				"code": 58887
+			},
+			"setIdx": 0,
+			"setId": 0,
+			"iconIdx": 285
+		},
+		{
+			"icon": {
+				"paths": [
+					"M128 128h768v768h-768z"
+				],
+				"attrs": [],
+				"tags": [
+					"stop",
+					"player",
+					"square"
+				],
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"id": 1003,
+				"order": 10,
+				"prevSize": 32,
+				"ligatures": "stop2, player10",
+				"name": "stop2",
+				"code": 58888
+			},
+			"setIdx": 0,
+			"setId": 0,
+			"iconIdx": 286
+		},
+		{
+			"icon": {
+				"paths": [
+					"M576 160v320l320-320v704l-320-320v320l-352-352z"
+				],
+				"attrs": [],
+				"tags": [
+					"backward",
+					"player"
+				],
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"id": 1004,
+				"order": 12,
+				"prevSize": 32,
+				"ligatures": "backward2, player11",
+				"name": "backward2",
+				"code": 58889
+			},
+			"setIdx": 0,
+			"setId": 0,
+			"iconIdx": 287
+		},
+		{
+			"icon": {
+				"paths": [
+					"M512 864v-320l-320 320v-704l320 320v-320l352 352z"
+				],
+				"attrs": [],
+				"tags": [
+					"forward",
+					"player"
+				],
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"id": 1005,
+				"order": 11,
+				"prevSize": 32,
+				"ligatures": "forward3, player12",
+				"name": "forward3",
+				"code": 58890
+			},
+			"setIdx": 0,
+			"setId": 0,
+			"iconIdx": 288
+		},
+		{
+			"icon": {
+				"paths": [
 					"M512 0c-282.77 0-512 229.23-512 512s229.23 512 512 512v-384h-128v-128h128v-96c0-88.366 71.632-160 160-160h160v128h-160c-17.674 0-32 14.328-32 32v96h176l-32 128h-144v367.87c220.828-56.838 384-257.3 384-495.87 0-282.77-229.23-512-512-512z"
 				],
 				"attrs": [],
