@@ -1,14 +1,15 @@
 color1 = #89602D
 color2 = #274E77
 
+@import 'var/mixin'
+@import 'var/header'
+@import 'var/slide'
+@import 'var/footer'
+
 *
   margin: 0
   padding: 0
   box-sizing: border-box
-
-/*img
-  max-width: 100%
-  height: auto*/
 
 body
   background-color: #111
@@ -23,58 +24,24 @@ h2
   color: #89602D
   text-transform: uppercase
 
-.img-slides
-  position: relative
-  /*display: flex;*/
-
-.img-slides h3
-  position: absolute
-  z-index: 1
-  width: 100%
-  height: 100%
-  display: flex
-  align-items: center
-  justify-content: center
-  text-transform: uppercase
-  font-size: 6vh
-  text-align: center
-  font-family: 'Open Sans Condensed'
-
-header
-  width: 100%
-  display: flex
-  flex-direction: column
-  text-align: center
-
 figure
   text-align: center
   position: relative
 
-.logo figure img
-  width: 55px
-  height: 85px
-  margin-top: 30px
-
-.titulo-logo
-  text-align: center
-  color: #fff
-  font-size: 1.7em
-  letter-spacing: 2px
-  text-transform: uppercase
-
-nav
-  flex-wrap: wrap
-  text-transform: uppercase
-  margin-bottom: 1.3em
-    a
-      text-decoration: none
-      padding: 5px 15px
-      color: color1
-      transition: .2s
-      border-bottom: 1px solid transparent
-        &:hover
-          color: color2
-          border-bottom: 1px solid #274E77
+.img-slides
+  position: relative
+    h3
+      position: absolute
+      z-index: 1
+      width: 100%
+      height: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+      text-transform: uppercase
+      font-size: 6vh
+      text-align: center
+      font-family: 'Open Sans Condensed'
 
 section
   display: flex
@@ -92,9 +59,8 @@ section.color2 article.art-txt
 
 article figure
   width: 30em
-
-article figure img
-  width: 60em
+    img
+      width: 60em
 
 article p
   font-family: 'Open Sans Condensed'
@@ -139,56 +105,16 @@ article, .ico-txt
   width: 20em
   display: inline-block
   text-align: center
-
-.ico-txt
-  &:hover
     span
-      color: #89602D
-      transform: scale(.9)
-
-.ico-txt
-  span
-    font-size: 12em
-    transform: scale(1)
-    transition: .3s
-  p
-    font-family: 'Open Sans Condensed'
-    font-size: .9rem
-    margin-top: 1em
-
-footer
-  background-color: black
-  width: 100%
-  display: flex
-  flex-wrap: wrap
-  justify-content: center
-  align-items: flex-start
-  padding-bottom: 3em
-  font-family: 'Open Sans Condensed'
-  padding-top: 3em
-
-.acerca-de
-  padding: 0 3em 0 1em
-  font-size: .9rem
-  width: 50em
-
-.sociales
-  font-size: .9em
-  text-align: center
-  width: 20em
-    span
-      font-size: 3em
-      padding: 0 .4em
-      line-height: 1.2em
+      font-size: 12em
       transition: .3s
-        &:hover
-          color: #274E77
-    a
-      text-decoration: none
-      color: #c1c1c1
-
     p
-      font-size: .8em
+      font-family: 'Open Sans Condensed'
+      font-size: .9rem
+      margin-top: 1em
+    &:hover
+          span
+            color: #89602D
 
 .trans-1, .trans-3
   opacity: 0
@@ -206,11 +132,7 @@ footer
   transition: all .2s ease-out
 
 .desatura
-  filter: grayscale(90%)
-  -webkit-filter: grayscale(90%)
-  -moz-filter: grayscale(90%)
-  -ms-filter: grayscale(90%)
-  -o-filter: grayscale(90%)
+  filter: (grayscale(70%))
 
 .marg-ri
   left: 10em
@@ -237,47 +159,3 @@ footer
   width: 90%
   max-width: 1000px
   display: flex
-
-.slides
-  width: 100%
-    img
-      width: 100%
-
-.slidesjs-pagination
-  background: #111
-  list-style: none
-  overflow: hidden
-    li
-      float: left
-        a
-          display: inline-block
-          padding: 5.5px 20px
-          color: #c1c1c1
-          text-decoration: none
-          transition: .1s
-            &hover
-              background: #274E77
-
-.slides .active
-  background: black
-
-.slidesjs-navigation
-  background: #111
-  color: #c1c1c1
-  text-decoration: none
-  display: inline-block
-  padding: 10px 20px
-  float: left
-    &:hover
-      background: #274E77
-
-.slides
-  background: black
-
-.slides
-  img
-    opacity 1
-    transition all .3s ease-out
-  &:hover
-    img
-      opacity 0.4

@@ -15,17 +15,7 @@ html(lang='es')
     link(rel='icon', type='image/png', href='imagenes/ico.png')
     title Brian Marriaga
   body
-    header
-      .logo
-        figure
-          img(src='imagenes/logow.png', alt='Brian Marriaga')
-      .titulo-logo Brian Marriaga
-      nav
-        a(href='#') Inicio
-        a(href='#') Portafolio
-        a(href='#') Biografia
-        a(href='#') Blog
-        a(href='#') Contacto
+    include template/header.jade
     section.color2.maximo-h
       .main
         .slides
@@ -42,7 +32,7 @@ html(lang='es')
       article.art-txt
         h2 Diseño Profesional para Profesionales
         p
-          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          include template/lorem.jade
       article
         figure
           img.trans-1(src='imagenes/w-p1.png', alt='Atom')
@@ -51,7 +41,7 @@ html(lang='es')
       article.art-txt
         h2 Diseño Profesional para Profesionales
         p
-          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          include template/lorem.jade
       article.marg-ri
         figure
           img.img-2.trans-5(src='imagenes/aips.png', alt='Ai and Ps')
@@ -60,7 +50,7 @@ html(lang='es')
       article.art-txt
         h2 Diseño Profesional para Profesionales
         p
-          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          include template/lorem.jade
         a(href='#') Link de prueba
       article
         figure
@@ -69,37 +59,15 @@ html(lang='es')
       .ico-txt
         span.icon-rocket
         p
-          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          include template/lorem.jade
       .ico-txt
         span.icon-coin-dollar
         p
-          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          include template/lorem.jade
         a(href='#') Link de prueba
       .ico-txt
         span.icon-clock
         p
-          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    footer
-      .acerca-de
-        h2 Servicios
-        p
-          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      aside
-        .sociales
-          h2 Sigueme
-          a(href='#')
-            span.icon-facebook3
-          a(href='#')
-            span.icon-github4
-          a(href='#')
-            span.icon-twitter3
-          p
-            br
-            a(rel='license', href='http://creativecommons.org/licenses/by-sa/4.0/')
-              img(alt='Licencia de Creative Commons', style='border-width:0', src='http://i.creativecommons.org/l/by-sa/4.0/80x15.png')
-            br
-            | Este obra está bajo una
-            a(rel='license', href='http://creativecommons.org/licenses/by-sa/4.0/') licencia de Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional
-            | .
-            
+          include template/lorem.jade
+    include template/footer.jade            
             

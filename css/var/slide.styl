@@ -1,0 +1,41 @@
+.slides
+  width: 100%
+    img
+      width: 100%
+
+.slidesjs-pagination
+  background: #111
+  list-style: none
+  overflow: hidden
+    li
+      float: left
+        a
+          display: inline-block
+          padding: 5.5px 20px
+          color: #c1c1c1
+          text-decoration: none
+          transition: .1s
+          &hover
+            background: #274E77
+
+.slides .active
+  background: black
+
+.slidesjs-navigation
+  background: #111
+  color: #c1c1c1
+  text-decoration: none
+  display: inline-block
+  padding: 10px 20px
+  float: left
+    &:hover
+      background: #274E77
+
+.slides
+  background: black
+    img
+      opacity 1
+      transition all .3s ease-out
+    &:hover
+      img
+        opacity 0.4

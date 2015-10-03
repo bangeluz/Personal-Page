@@ -1,4 +1,4 @@
-{
+﻿{
     "debug": false,
     "lintScripts": false,
     "preprocessorLocations": [
@@ -7,9 +7,9 @@
     "preprocessorScriptOutput": "js",
     "preprocessorStyleOutput": "css",
     "projectName": "Personal Page",
-    "projectDescription": "Project Description",
+    "projectDescription": "Página personal primera versión.",
     "publishedId": null,
-    "serverHostname": null,
+    "serverHostname": "localhost",
     "serverPort": null,
     "templateDirectory": "templates",
     "templateDefaultLayout": "layout",
