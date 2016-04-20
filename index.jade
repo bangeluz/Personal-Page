@@ -1,14 +1,11 @@
-//output:index.html, pretty:false
-doctype html
+//output:index.html, pretty:true
+<!DOCTYPE html>
 html(lang='es')
   head
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1')
     script(src='js/prefixfree.min.js', type='text/javascript')
-    script(src='http://code.jquery.com/jquery-latest.js')
-    script(src='js/jquery.slides.js', type='text/javascript')
-    script(src='js/js.js', type='text/javascript')
     link(href='http://fonts.googleapis.com/css?family=Khand|Open+Sans+Condensed:300', rel='stylesheet', type='text/css')
     link(rel='stylesheet', href='css/estilos.min.css')
     link(rel='stylesheet', href='css/fonts.min.css')
@@ -20,13 +17,13 @@ html(lang='es')
       .main
         .slides
           .img-slides
-            h3 Un título
+            h3 Título
             img(src='http://placehold.it/1600x900', alt='')
           .img-slides
-            h3 Otro título
+            h3 Título
             img(src='http://placehold.it/1600x900/ffffff/000000', alt='')
           .img-slides
-            h3 Otro más
+            h3 Título
             img(src='http://placehold.it/1600x900/ff0000/000000', alt='')
     section
       article.art-txt
@@ -54,7 +51,7 @@ html(lang='es')
         a(href='#') Link de prueba
       article
         figure
-          img.trans-3(src='imagenes/w-p1.png', alt='Atom')
+          img.trans-3(src='imagenes/iphone-black.png', alt='iPhone')
     section.color2.iconos
       .ico-txt
         span.icon-rocket
@@ -69,5 +66,7 @@ html(lang='es')
         span.icon-clock
         p
           include template/lorem.jade
-    include template/footer.jade            
-            
+    include template/footer.jade
+    script(src='http://code.jquery.com/jquery-latest.js')
+    script(src='js/jquery.slides.js', type='text/javascript')
+    script(src='js/js.js', type='text/javascript')            
